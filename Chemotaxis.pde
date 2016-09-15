@@ -1,4 +1,5 @@
-Bacteria chou = new Bacteria();
+
+Bacteria chou;
  //declare bacteria variables here   
  void setup()   
  {     
@@ -8,29 +9,33 @@ Bacteria chou = new Bacteria();
  void draw()   
  {    
  	//move and show the bacteria
- 	chou.walk();
- 	chou.show();
+ 	chou = new Bacteria [5];
+ 	for(int i = 0; i < chou.lenght; chou++)
+ 	{
+ 		chou = new Bacteria (i);
+ 	}
 
  }  
  class Bacteria    
  {     
  	//lots of java!  
- 	 int myX, myY;
- 	 Bacteria()
- 	 {
- 	 	myX = 200;
- 	 	myY = 200;
- 	 }
+	int myX, myY;
 
- 	 void walk()
- 	 {
- 	 	myX = myX + (int)(Math.random()*10)-5;
- 	 	myY = myY + (int)(Math.random()*10)-5;
- 	 }
+	Bacteria()
+	{
+		myX = 150;
+		myY = 150;
+	}
 
- 	 void show()
- 	 {
- 	 	fill(#ffccff);
- 	 	rect(myX, myY, 15, 15, -20);
- 	 }
- }    
+	void walk()
+	{
+		myX = myX + (int)(Math.random()*5)-2;
+		myY = myY + (int)(Math.random()*5)-2;
+	}
+
+	void show()
+	{
+		fill(#ffccff);
+		rect(myX, myY, 5, 5, -20);
+	}
+}    
