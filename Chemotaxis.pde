@@ -21,8 +21,8 @@ Bacteria [] chou;
  		chou[i] .walk();
  		chou[i] .show();
  	}
+ } 
 
- }  
  class Bacteria    
  {     
  	//lots of java!  
@@ -61,5 +61,7 @@ Bacteria [] chou;
 		noStroke();
 		fill((int)(Math.random()*255)+100, (int)(Math.random()*255)+100, (int)(Math.random()*255)+100, 230);
 		rect(myX, myY, 5, 5, -20);
+		fill((int)(Math.random()*255)+50, (int)(Math.random()*255)+70, (int)(Math.random()*255)+90, 250);
+		ellipse (myX-10, myY-25, 5, 5);
 	}
 }    
