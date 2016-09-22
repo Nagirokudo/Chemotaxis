@@ -1,6 +1,6 @@
 body {
-    background-color: rgb(#1a0033);
-    color: rgb(#ffffff);
+    background-color: rgb(#ffffff);
+    color: rgb(#1a0033);
     font-family: "Brush Script MT", sans-serif;
     text-align: center;
 }
@@ -17,5 +17,5 @@ header {
 
 footer {
 	font-style: italic;
-	font-size: 90%;
+	font-size: 100%;
 }
