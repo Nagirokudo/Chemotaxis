@@ -13,7 +13,7 @@ void setup()
  void draw()   
  {    
  //move and show the bacteria
- background(#420080);
+ background(#0d0d0d);
 
  for(int i = 0; i < chou .length; i++)
  {
